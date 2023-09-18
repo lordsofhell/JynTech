@@ -1,0 +1,42 @@
+.wrapper{
+    display: block;
+    margin: 2px 2px 2px 2px;
+    width: 12em;
+    height: 3em;
+}
+.label{
+    color: black;
+    position: relative;
+    z-index: 100;
+    
+}
+.blank{
+    left: 5em;
+    top: 2.1em;
+    transition: all 1s;
+    
+}
+.open{
+    left: 0em;
+    top: 0em;
+    transition: all 1s;
+    
+}
+
+.input{
+    border: 1px solid black;
+    height: 3em;
+    color: black;
+}
+.input:focus{
+    border: 3px solid blue;
+}
+
+
+.button{
+    color: black
+}
+@keyframes labelMove {
+    from {left: 0em; top: 0em;}
+    to {left: 5em; top: 2.1em;}
+  }
